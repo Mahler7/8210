@@ -1,7 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render PostsIndex page 1`] = `
-<h1>
-  Posts Index
-</h1>
+<div>
+  <h1>
+    Posts Index
+  </h1>
+  <PostsIndexItem
+    author="John"
+    content="This is the first blog article"
+    createdAt="December 31st 1969"
+    id="1"
+    key="1"
+    title="Blog Post 1"
+  />
+  <PostsIndexItem
+    author="Jane"
+    content="This is the second blog article"
+    createdAt="December 21st 1969"
+    id="2"
+    key="2"
+    title="Blog Post 2"
+  />
+  <PostsIndexItem
+    author="Dave"
+    content="This is the third blog article"
+    createdAt="January 10th 1970"
+    id="3"
+    key="3"
+    title="Blog Post 1"
+  />
+</div>
 `;

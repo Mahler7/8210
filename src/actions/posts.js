@@ -22,4 +22,3 @@ export const addPost = (
     author
   }
 });
-console.log(addPost());
