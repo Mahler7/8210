@@ -1,12 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 import PostsIndex from '../components/posts/PostsIndex';
 import PostNew from '../components/posts/PostNew';
 import PostEdit from '../components/posts/PostEdit';
 import PostShow from '../components/posts/PostShow';
 
+export const history = createHistory();
+
 const AppRouter = () => (
-  <BrowserRouter>
+  <Router history={history}>
     <div>
       <Switch>
         <Route path="/" component={PostsIndex} exact={true} />
@@ -15,7 +18,7 @@ const AppRouter = () => (
         <Route path="/posts/:id" component={PostShow} exact={true} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </Router>
 );
 
 export default AppRouter;
